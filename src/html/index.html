@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <%= htmlWebpackPlugin.options.head %>
+
+    <title>Alta Luna - Sua escola de programação online</title>
+  </head>
+
+  <body>
+    <%= htmlWebpackPlugin.options.header %>
+
+    <main>
+      <div class="banner" id="banner">
+        <div class="content">
+          <img
+            alt="Astronauta meditando"
+            class="astronaut_floating"
+            src="assets/images/astronaut_float.png"
+          />
+
+          <h1 class="title">Um universo feito</h1>
+          <h1 class="title">
+            de
+            <label class="mono"> códigos</label
+            ><label class="mono blinking-cursor">_</label>
+          </h1>
+
+          <hr />
+
+          <span
+            >E uma escola online de
+            <label class="highlight">programação</label></span
+          >
+          <span>pra te ajudar a explorar 👩‍🚀</span>
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <h3>O que é a <span class="highlight">Alta Luna</span> ?</h3>
+
+        <div class="carousel">
+          <div class="item">
+            <img alt="Astronauta" src="assets/images/astronaut_universe.png" />
+
+            <div class="content">
+              <h4 class="mono">
+                > na imensidão de conteúdos<label class="mono blinking-cursor"
+                  >_</label
+                >
+              </h4>
+
+              <p class="highlight">
+                A Alta Luna é a adrenalina para os seus dias desacreditados de
+                aspirantes a programadores 💪
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img
+              alt="Astronauta"
+              src="assets/images/astronaut.png"
+              style="max-width: 350px"
+            />
+
+            <div class="content">
+              <h4 class="mono">
+                > aprender descontraindo<label class="mono blinking-cursor"
+                  >_</label
+                >
+              </h4>
+
+              <p class="highlight">
+                Aprender a programar é difícil, mas não tem que ser chato...
+                Prática e diversão juntos são o melhor caminho 🎯
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img alt="Astronauta" src="assets/images/unicorn.png" />
+
+            <div class="content">
+              <h4 class="mono">
+                > pra fixar melhor<label class="mono blinking-cursor">_</label>
+              </h4>
+
+              <p class="highlight">
+                Nosso método de ensino é tão memorável quanto um unicórnio
+                dançando tango 🦄
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img alt="Astronauta" src="assets/images/cat.png" />
+
+            <div class="content">
+              <h4 class="mono">
+                > e alcançar o sucesso<label class="mono blinking-cursor"
+                  >_</label
+                >
+              </h4>
+
+              <p class="highlight">
+                Quando menos imaginar, já vai estar "codando" um sistema pro seu
+                gato organizar os compromissos 🐈
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="courses" id="courses">
+        <div class="container">
+          <div class="production_title">
+            <h3>Em breve,</h3>
+            <h1>vários cursos fresquinhos pra você.</h1>
+          </div>
+
+          <img
+            alt="Produção de Cursos"
+            class="production"
+            src="assets/images/course_production.png"
+          />
+        </div>
+      </div>
+
+      <div class="newsletter" id="newsletter">
+        <div class="container">
+          <div class="row">
+            <img src="assets/images/astronaut_coffee.png" class="sticker" />
+
+            <div class="col xs12">
+              <div class="newsletter_block">
+                <div class="newsletter_callout">
+                  <div class="newsletter_callout__body">
+                    <div class="newsletter-callout__header">
+                      <h3 class="newsletter-callout__title" for="Email">
+                        Estamos arrumando a casa...
+                      </h3>
+
+                      <p class="newsletter-callout__subtitle">
+                        Enquanto isso, por que não entra e toma uma xícara de
+                        café?
+                      </p>
+                    </div>
+
+                    <div class="newsletter-callout__form">
+                      <!-- Begin Mailchimp Signup Form -->
+                      <link
+                        href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+                        rel="stylesheet"
+                        type="text/css"
+                      />
+                      <div id="mc_embed_signup">
+                        <form
+                          action="https://gmail.us20.list-manage.com/subscribe/post?u=01fe405ea74baacdac9dbefd5&amp;id=0e31ed4362"
+                          class="validate"
+                          id="mc-embedded-subscribe-form"
+                          method="post"
+                          name="mc-embedded-subscribe-form"
+                          novalidate="novalidate"
+                          target="_blank"
+                        >
+                          <div class="mc-field-group">
+                            <input
+                              aria-invalid="true"
+                              aria-required="true"
+                              class="required email"
+                              id="mce-EMAIL"
+                              name="EMAIL"
+                              placeholder="Poreis vosso e-mail aqui..."
+                              type="email"
+                              value=""
+                            />
+                          </div>
+                          <div class="clear" id="mce-responses">
+                            <div
+                              class="response mce_inline_error"
+                              id="mce-error-response"
+                              style="display: none"
+                            ></div>
+                            <div
+                              class="response"
+                              id="mce-success-response"
+                              style="display: none"
+                            ></div>
+                          </div>
+                          <div aria-hidden="true" class="mc-validated">
+                            <input
+                              name="b_01fe405ea74baacdac9dbefd5_0e31ed4362"
+                              tabindex="-1"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <div class="clear">
+                            <input
+                              class="button"
+                              id="mc-embedded-subscribe"
+                              name="subscribe"
+                              type="submit"
+                              value="Simbora"
+                            />
+                          </div>
+                          <span class="subtitle">
+                            Relaxa, nada de spams. Só segredos e verdades... 😏
+                          </span>
+                        </form>
+                      </div>
+                      <script
+                        src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+                        type="text/javascript"
+                      ></script>
+                      <script type="text/javascript">
+                        ;(function ($) {
+                          window.fnames = new Array()
+                          window.ftypes = new Array()
+                          fnames[0] = 'EMAIL'
+                          ftypes[0] = 'email'
+                          $.extend($.validator.messages, {
+                            required: 'Ei, desista não, volta aqui...',
+                            remote: 'Por favor, corrija este campo.',
+                            email: 'Eita, esse e-mail tá certo não...',
+                            url: 'Por favor, introduza um URL válido.',
+                            date: 'Por favor, introduza uma data válida.',
+                            dateISO:
+                              'Por favor, introduza uma data válida (ISO).',
+                            number: 'Por favor, introduza um número válido.',
+                            digits: 'Por favor, introduza apenas dígitos.',
+                            creditcard:
+                              'Por favor, introduza um número de cartão de crédito válido.',
+                            equalTo:
+                              'Por favor, introduza de novo o mesmo valor.',
+                            accept:
+                              'Por favor, introduza um ficheiro com uma extensão válida.',
+                            maxlength: $.validator.format(
+                              'Por favor, não introduza mais do que {0} caracteres.'
+                            ),
+                            minlength: $.validator.format(
+                              'Por favor, introduza pelo menos {0} caracteres.'
+                            ),
+                            rangelength: $.validator.format(
+                              'Por favor, introduza entre {0} e {1} caracteres.'
+                            ),
+                            range: $.validator.format(
+                              'Por favor, introduza um valor entre {0} e {1}.'
+                            ),
+                            max: $.validator.format(
+                              'Por favor, introduza um valor menor ou igual a {0}.'
+                            ),
+                            min: $.validator.format(
+                              'Por favor, introduza um valor maior ou igual a {0}.'
+                            ),
+                          })
+                        })(jQuery)
+                        var $mcj = jQuery.noConflict(true)
+                      </script>
+                      <!--End mc_embed_signup-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%= htmlWebpackPlugin.options.footer %>
+  </body>
+</html>

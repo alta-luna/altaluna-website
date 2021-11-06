@@ -1,0 +1,293 @@
+main {
+  .banner {
+    @extend %starry-bg;
+    color: $white;
+    height: 700px;
+    padding: 100px 0 20px;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      hr {
+        width: 300px;
+        margin: 27px;
+        border-color: $yellow;
+      }
+
+      span {
+        font-size: 1.5rem;
+        background-color: $black;
+        padding: 0 2rem;
+      }
+    }
+
+    .astronaut_floating {
+      max-width: 130px;
+      margin-top: 110px;
+      margin-bottom: -14px;
+      z-index: 99;
+      animation: float-up-down 2s infinite alternate;
+    }
+
+    .title {
+      font-size: 4em;
+      text-align: center;
+      color: $white;
+      padding: 25px 0 13px;
+      background-color: $darkBlue;
+      min-width: 60%;
+      max-width: 600px;
+      font-weight: 700;
+      line-height: 0.8;
+    }
+  }
+
+  .about {
+    max-width: $maxPageWidth;
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+
+    .carousel {
+      padding-top: 3rem;
+    }
+
+    .item {
+      margin-bottom: 3rem;
+    }
+
+    h4 {
+      margin: 2rem auto 1rem;
+    }
+
+    img {
+      max-width: 300px;
+      height: 300px;
+    }
+
+    .slick-prev {
+      left: 10%;
+
+      &::before {
+        content: '\f053';
+      }
+    }
+
+    .slick-next {
+      right: 10%;
+
+      &::before {
+        content: '\f054';
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      z-index: 99;
+
+      &::before {
+        font-family: 'Font Awesome 5 Free';
+        color: $black;
+        font-weight: 900;
+      }
+    }
+
+    .slick-dots li button:before {
+      font-size: 10px;
+    }
+  }
+
+  .courses {
+    background-color: $black;
+
+    .container {
+      display: flex;
+      margin: 0px auto 100px;
+      justify-content: space-between;
+      max-width: $maxPageWidth;
+      padding: 8rem 0;
+      align-items: center;
+    }
+
+    .production {
+      max-width: 600px;
+    }
+
+    .production_title {
+      h1,
+      h3 {
+        color: $white;
+        margin-top: 1rem;
+        line-height: 1.1em;
+      }
+    }
+
+    .production_title {
+      width: 50%;
+    }
+  }
+
+  .newsletter {
+    position: relative;
+    padding: 3rem 0;
+
+    .container {
+      margin: 0 auto;
+      max-width: $maxPageWidth;
+      padding: 1rem;
+      width: 100%;
+      background-color: $lightBlue;
+    }
+
+    .row {
+      margin: auto;
+    }
+
+    .sticker {
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -65px;
+      width: 128px;
+    }
+
+    .newsletter_callout {
+      max-width: 50%;
+      position: relative;
+      margin: auto;
+    }
+
+    .newsletter_block {
+      padding: 2rem;
+    }
+
+    .newsletter-callout__subtitle {
+      margin: 1rem auto;
+    }
+
+    .newsletter-callout__title {
+      margin: 1rem auto;
+    }
+
+    // Mailchimp
+    #mc_embed_signup {
+      form {
+        padding: 0;
+
+        #mce-responses,
+        #mce-success-response {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+      }
+
+      .mce_inline_error {
+        margin: 4px 0 0 0 !important;
+      }
+
+      input.button {
+        -webkit-appearance: none;
+        width: 100% !important;
+        background-color: $darkBlue;
+        text-transform: uppercase;
+        font-weight: 900;
+        min-height: 48px;
+        font-family: $primaryFont;
+        letter-spacing: 1px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .subtitle {
+        font-size: 12px;
+        display: block;
+      }
+    }
+
+    .mc-field-group {
+      width: 100% !important;
+
+      input {
+        -webkit-appearance: none;
+        min-height: 30px;
+        font-family: $primaryFont;
+      }
+    }
+
+    .mc-validated {
+      position: absolute;
+      left: -5000px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  main {
+    .banner {
+      background-size: cover;
+      height: 480px;
+
+      .title {
+        font-size: 2rem;
+        line-height: 1;
+        padding: 10px 0 5px;
+        min-width: 100%;
+      }
+
+      .astronaut_floating {
+        max-width: 100px;
+        margin-top: 80px;
+        margin-bottom: -10px;
+      }
+
+      .content span {
+        background: none;
+        text-align: center;
+        padding: 0;
+        font-size: 1.2rem;
+      }
+    }
+
+    .about {
+      .item {
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    .courses {
+      .container {
+        flex-direction: column-reverse;
+        padding: 5rem 0;
+        margin: 0;
+      }
+
+      .production_title {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+      }
+    }
+
+    .newsletter {
+      padding: 6rem 0 3rem;
+
+      .container {
+        width: auto;
+      }
+
+      .newsletter_callout {
+        max-width: 100%;
+      }
+
+      .newsletter_block {
+        padding: 2rem 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// Fonts
+$primaryFont: 'Spartan', sans-serif;
+$secondaryFont: 'Spartan', 'Segoe UI', sans-serif;
+
+// Font Sizes
+$smallFontSize: 15px;
+$textFontSize: 18px;
+$regularFontSize: 1.2rem;
+$subtitleFontSize: 1.7rem;
+$titleFontSize: 2.5rem;
+$largeTitleFontSize: 4rem;
+
+// Colors
+$black: #0d0d0d;
+$white: #fff;
+$yellow: #fabf20;
+$lightYellow: #fabf214f;
+$orange: #ff6c00;
+$lightBlue: #a2d2ff7a;
+$blue: #206cb6;
+$darkBlue: #111032;
+$grey: #cfcdce;
+
+$textColor: #333;
+
+// Dimensions
+$maxPageWidth: 1280px;
+
+// z-index
+$defaultZIndex: 999;
+
+// Breakpoints
+$breakpoint-phone: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
